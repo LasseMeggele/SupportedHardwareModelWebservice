@@ -1,18 +1,103 @@
 ﻿{
     "MakeModel": [
         {
-            "AlternativeNames": [ "Hewlett-Packard", "HP", "HP OEM" ],
+            "AlternativeNames": [ "Hewlett-Packard", "HP", "HPQOEM" ],
             "Manufacturer": "Hewlett-Packard",
             "Models": [
+                {
+                    "Name": "HP Compaq 8000 Elite CMT PC",
+                    "ModelAlias": "HP Compaq 8000 Elite",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP Compaq 8000 Elite SFF PC",
+                    "ModelAlias": "HP Compaq 8000 Elite",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP Compaq 8100 Elite SFF PC",
+                    "ModelAlias": "HP Compaq 8100 Elite",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "Hp Compaq Elite 8100 sff",
+                    "ModelAlias": "HP Compaq 8100 Elite",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP Compaq 8200 Elite MT PC",
+                    "ModelAlias": "HP Compaq 8200 Elite",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP Compaq 8200 Elite MT PC",
+                    "ModelAlias": "HP Compaq 8200 Elite",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP Compaq 8200 Elite SFF PC",
+                    "ModelAlias": "HP Compaq 8200 Elite",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP COmpaq 8300 Elite SFF",
+                    "ModelAlias": "HP Compaq 8300 Elite",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP Compaq Elite 8300 CMT",
+                    "ModelAlias": "HP Compaq 8300 Elite",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP Compaq Elite 8300 SFF",
+                    "ModelAlias": "HP Compaq 8300 Elite",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP EliteBook 820 G1",
+                    "ModelAlias": "HP EliteBook 820 G1",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP EliteBook 820 G2",
+                    "ModelAlias": "HP EliteBook 820 G2",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
                 {
                     "Name": "HP EliteBook 840 G3",
                     "ModelAlias": "HP EliteBook 840 G3",
                     "OSVersions": [ "6.1.7601", "8.1.9600", "10.0.14393" ]
                 },
                 {
-                    "Name": "HP EliteDesk 800 G2",
+                    "Name": "HP ProDesk 600 G1 SFF",
+                    "ModelAlias": "HP ProDesk 600 G1",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP ProDesk 600 G1 TWR",
+                    "ModelAlias": "HP ProDesk 600 G1",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP EliteDesk 800 G1 SFF",
+                    "ModelAlias": "HP EliteDesk 800 G1",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP EliteDesk 800 G1 TWR",
+                    "ModelAlias": "HP EliteDesk 800 G1",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP EliteDesk 800 G2 SFF",
                     "ModelAlias": "HP EliteDesk 800 G2",
-                    "OSVersions": [ "6.1.7601", "8.1.9600", "10.0.14393" ]
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "HP EliteDesk 800 G2 TWR",
+                    "ModelAlias": "HP EliteDesk 800 G2",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
                 }
             ]
         },
@@ -24,6 +109,11 @@
                     "Name": "ThinkPad X260",
                     "ModelAlias": "ThinkPad X260",
                     "OSVersions": [ "6.1.7601", "8.1.9600", "10.0.14393" ]
+                },
+                {
+                    "Name": "ThinkPad X1 Yoga 1st",
+                    "ModelAlias": "ThinkPad X1 Yoga 1st",
+                    "OSVersions": [ "8.1.9600", "10.0.14393" ]
                 },
                 {
                     "Name": "ThinkCentre M900",
@@ -66,6 +156,22 @@
                     "Name": "Surface 3",
                     "ModelAlias": "Surface 3",
                     "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "Virtual Machine",
+                    "ModelAlias": "Virtual Machine",
+                    "OSVersions": [ "6.1.7601", "8.1.9600", "10.0.14393" ]
+                }
+            ]
+        },
+        {
+            "AlternativeNames": [ "Intel Corporation" ],
+            "Manufacturer": "Intel Corporation",
+            "Models": [
+                {
+                    "Name": "D33217GKE",
+                    "ModelAlias": "D33217GKE",
+                    "OSVersions": [ "8.1.9600", "10.0.14393" ]
                 }
             ]
         }
