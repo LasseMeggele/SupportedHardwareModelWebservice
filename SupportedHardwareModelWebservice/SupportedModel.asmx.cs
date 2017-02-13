@@ -22,16 +22,10 @@ namespace SupportedHardwareModelWebservice
     {
 
         [WebMethod]
-        public List<MakeModel> GetSupportedModels()
-        {
-            return DeserializeJsonObjects();
-        }
+        public List<MakeModel> GetSupportedModels() => DeserializeJsonObjects();
 
         [WebMethod]
-        public List<string> GetManufacturers()
-        {
-            return DeserializeJsonObjects().Select(x => x.Manufacturer).ToList();
-        }
+        public List<string> GetManufacturers() => DeserializeJsonObjects().Select(x => x.Manufacturer).ToList();
 
         [WebMethod]
         public List<string> GetAlternativeManufacturerList(string manufacturer)
@@ -40,6 +34,15 @@ namespace SupportedHardwareModelWebservice
                 .Where(x => string.Equals(x.Manufacturer, manufacturer, StringComparison.InvariantCultureIgnoreCase))
                 .SelectMany(x => x.AlternativeNames)
                 .ToList();
+        }
+
+        [WebMethod]
+        public string GetManufacturerFromAltName(string alternativeName)
+        {
+            return
+                DeserializeJsonObjects()
+                    .Find(x => x.AlternativeNames.Contains(alternativeName, StringComparer.InvariantCultureIgnoreCase))
+                    .Manufacturer;
         }
 
         private static List<MakeModel> DeserializeJsonObjects()

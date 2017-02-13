@@ -8,7 +8,7 @@ namespace SupportedHardwareModelWebservice
     public class MakeModel : IEquatable<MakeModel>
     {
         public string Manufacturer { get; set; }
-        public string[] AlternativeNames { get; set; }
+        public string[]AlternativeNames { get; set; }
         public Model[] Models { get; set; }
         private IEquatable<MakeModel> _equatableImplementation;
 
