@@ -1,0 +1,73 @@
+﻿{
+    "MakeModel": [
+        {
+            "AlternativeNames": [ "Hewlett-Packard", "HP", "HP OEM" ],
+            "Manufacturer": "Hewlett-Packard",
+            "Models": [
+                {
+                    "Name": "HP EliteBook 840 G3",
+                    "ModelAlias": "HP EliteBook 840 G3",
+                    "OSVersions": [ "6.1.7601", "8.1.9600", "10.0.14393" ]
+                },
+                {
+                    "Name": "HP EliteDesk 800 G2",
+                    "ModelAlias": "HP EliteDesk 800 G2",
+                    "OSVersions": [ "6.1.7601", "8.1.9600", "10.0.14393" ]
+                }
+            ]
+        },
+        {
+            "AlternativeNames": [ "LENOVO" ],
+            "Manufacturer": "LENOVO",
+            "Models": [
+                {
+                    "Name": "ThinkPad X260",
+                    "ModelAlias": "ThinkPad X260",
+                    "OSVersions": [ "6.1.7601", "8.1.9600", "10.0.14393" ]
+                },
+                {
+                    "Name": "ThinkCentre M900",
+                    "ModelAlias": "ThinkCentre M900",
+                    "OSVersions": [ "6.1.7601", "8.1.9600", "10.0.14393" ]
+                }
+            ]
+        },
+        {
+            "AlternativeNames": [ "Dell Inc.", "Dell Corporation" ],
+            "Manufacturer": "Dell Inc.",
+            "Models": [
+                {
+                    "Name": "Latitude E5570",
+                    "ModelAlias": "Latitude E5570",
+                    "OSVersions": [ "6.1.7601", "8.1.9600", "10.0.14393" ]
+                },
+                {
+                    "Name": "Latitude E5250",
+                    "ModelAlias": "Latitude E5250",
+                    "OSVersions": [ "6.1.7601", "8.1.9600", "10.0.14393" ]
+                }
+            ]
+        },
+        {
+            "AlternativeNames": [ "Microsoft Corporation" ],
+            "Manufacturer": "Microsoft Corporation",
+            "Models": [
+                {
+                    "Name": "Surface Pro 3",
+                    "ModelAlias": "Surface Pro 3",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                },
+                {
+                    "Name": "Surface Pro 4",
+                    "ModelAlias": "Surface Pro 4",
+                    "OSVersions": [ "10.0.14393" ]
+                },
+                {
+                    "Name": "Surface 3",
+                    "ModelAlias": "Surface 3",
+                    "OSVersions": [ "6.1.7601", "8.1.9600" ]
+                }
+            ]
+        }
+    ]
+}
