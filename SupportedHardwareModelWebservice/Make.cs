@@ -2,29 +2,28 @@
 
 namespace SupportedHardwareModelWebservice
 {
-    public class MakeModel : IEquatable<MakeModel>
+    public class Make : IEquatable<Make>
     {
         public string Manufacturer { get; set; }
         public string[]AlternativeNames { get; set; }
         public Model[] Models { get; set; }
 
-        public MakeModel(){}
+        public Make(){}
 
-        public MakeModel(string manufacturer, string[] alternativeNames)
+        public Make(string manufacturer, string[] alternativeNames)
         {
             Manufacturer = manufacturer;
             AlternativeNames = alternativeNames;
         }
 
-        public MakeModel(string manufacturer, string[] alternativeNames, Model[] models)
+        public Make(string manufacturer, string[] alternativeNames, Model[] models)
         {
             Manufacturer = manufacturer;
             AlternativeNames = alternativeNames;
             Models = models;
         }
 
-
-        public bool Equals(MakeModel other)
+        public bool Equals(Make other)
         {
             return other != null && 
                    Manufacturer.Equals(other.Manufacturer) &&
@@ -34,7 +33,7 @@ namespace SupportedHardwareModelWebservice
 
         public override bool Equals(object obj)
         {
-            var makeModel = obj as MakeModel;
+            var makeModel = obj as Make;
             if (makeModel == null)
             {
                 return false;

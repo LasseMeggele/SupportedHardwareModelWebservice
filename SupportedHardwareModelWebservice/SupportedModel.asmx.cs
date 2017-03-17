@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Services;
-using Newtonsoft.Json;
 using System.IO;
 using System.Web.Hosting;
 using Newtonsoft.Json.Linq;
@@ -24,7 +22,7 @@ namespace SupportedHardwareModelWebservice
     {
 
         [WebMethod]
-        public List<MakeModel> GetSupportedModels() => DeserializeJsonObjects();
+        public List<Make> GetSupportedModels() => DeserializeJsonObjects();
 
         [WebMethod]
         public List<string> GetManufacturers() => DeserializeJsonObjects().Select(x => x.Manufacturer).ToList();
@@ -44,28 +42,25 @@ namespace SupportedHardwareModelWebservice
             return alternativeName == ""
                 ? null
                 : DeserializeJsonObjects()
-                    .Select(
-                        o =>
-                            o.AlternativeNames.Any(oAlternativeName =>
-                                IsMatch(oAlternativeName, alternativeName,
-                                    IgnoreCase))
-                                ? o.Manufacturer
-                                : null).SkipWhile(x => x == null).FirstOrDefault();
+                    .Select(o => o.AlternativeNames
+                        .Any(oAlternativeName => IsMatch(oAlternativeName, alternativeName, IgnoreCase))
+                            ? o.Manufacturer
+                            : null).SkipWhile(x => x == null).FirstOrDefault();
         }
 
         [WebMethod]
-        public List<Model> GetModelsFromManufacturer(string manufacturer) => DeserializeJsonObjects().Find(x => x.Manufacturer == manufacturer).Models.ToList();
+        public List<Model> GetModelsFromManufacturer(string manufacturer) => DeserializeJsonObjects().Find(x => x.Manufacturer == manufacturer)?.Models.ToList();
 
         [WebMethod]
-        public string GetModelAlias(string manufacturer, string model) => GetModelsFromManufacturer(manufacturer).Find(x => x.Name == model).ModelAlias;
+        public string GetModelAlias(string manufacturer, string model) => GetModelsFromManufacturer(manufacturer).Find(x => x.Name == model)?.ModelAlias;
 
-        private static List<MakeModel> DeserializeJsonObjects()
+        private static List<Make> DeserializeJsonObjects()
         {
             var jsonObject =
                 JObject.Parse(
                     File.ReadAllText(Path.Combine(HostingEnvironment.ApplicationPhysicalPath,
                         @"SupportedHardwareModels.json")));
-            return jsonObject["MakeModel"].ToObject<List<MakeModel>>();
+            return jsonObject["Make"].ToObject<List<Make>>();
         }
     }
 }
